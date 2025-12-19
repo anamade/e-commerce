@@ -59,7 +59,7 @@
             
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 @foreach($featuredProducts as $product)
-                    <livewire:product-card :product="$product" :key="$product->id"  />
+                    <livewire:product-card :product="$product" :key="$product->id"  lazy />
                 @endforeach
             </div>
         </div>
